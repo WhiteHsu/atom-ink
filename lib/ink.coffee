@@ -13,6 +13,7 @@ Console = require './console/console'
 Stepper = require './debugger/stepper'
 breakpoints = require './debugger/breakpoints'
 PlotPane = require './plots/pane'
+DocPane = require('./docs/docpane')
 profiler = require './plots/profiler'
 Workspace = require './workspace/workspace'
 tree = require './tree'
@@ -44,7 +45,7 @@ module.exports = Ink =
     breakpoints: breakpoints
     Workspace: Workspace
     PlotPane: PlotPane
-    DocPane: require('./docs/docpane')
+    DocPane: DocPane
     highlights: highlights
     tree: tree
     InlineDoc: Docs
